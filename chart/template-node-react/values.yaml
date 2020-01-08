@@ -7,6 +7,7 @@ replicaCount: 1
 
 apiHost: "inventory-management-bff-lr:80"
 
+
 image:
   repository: replace
   tag: replace
@@ -23,12 +24,12 @@ service:
 ingress:
   enabled: true
   appid:
-    enabled: true
+    enabled: false
     # web or app - https://cloud.ibm.com/docs/services/appid?topic=appid-kube-auth
     requestType: web
     binding:
-      name: "binding-mooc-cpat-ocp01-appid"
-      namespace: "tools"
+      name: ""
+      namespace: ""
 
 #  host: hello
   namespaceInHost: true
